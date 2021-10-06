@@ -19,9 +19,12 @@
 	{{ content }}
 	{% include footer.html %}
 	<a href="#" class="m-btn btn-to-top"><i class="fas fa-angle-up fa-2x"></i></a>
-	<div id="fixscroll">
-	</div>
+	
 	<script src="{{site.url}}/assets/js/main.js"></script>
+
+	<!-- Đoạn script dưới đây để fix lỗi mất scroll bar -->
+	<!-- Nó chạy tốt, đừng động vào!!!! -->
+	<div id="fixscroll"></div>
 	<script type="text/javascript">
 		function fix() {
 			var fixscrollElem = document.getElementById("fixscroll");
@@ -34,5 +37,6 @@
 		}
 		setInterval(fix, 500);
 	</script>
+	
 </body>
 </html>
